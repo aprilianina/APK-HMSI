@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="20dp"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logohmsi"
+        android:id="@+id/logohmsi"
+        android:transitionName="logotrans"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hai Team Explorer!"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/open_sans_bold"
+        android:id="@+id/sambutan"
+        android:transitionName="text_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masuk untuk Eksplore"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:id="@+id/masukuntuk"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NIM"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/open_sans_regular"
+            android:background="@drawable/custom_input"
+            app:backgroundTint="#e4222a"
+            app:boxBackgroundColor="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/txtNim"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:passwordToggleEnabled="true"
+            android:fontFamily="@font/open_sans_regular"
+            android:layout_marginBottom="16dp"
+            app:backgroundTint="#e4222a"
+            android:background="@drawable/custom_input"
+            app:boxBackgroundColor="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:id="@+id/txtPass"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lupa Password "
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans_regular"
+            android:layout_gravity="right"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/lupapas"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:background="#066132"
+            app:backgroundTint="@null"
+            android:fontFamily="@font/open_sans_bold"
+            android:elevation="6dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/btnLogin"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum punya akun ?"
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans_semibold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/txtDaftar"/>
+    </LinearLayout>
+
+
+</LinearLayout>

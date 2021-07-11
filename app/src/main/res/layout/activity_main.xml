@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:src="@drawable/logohmsi"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:id="@+id/logo"
+        android:transitionName="logotrans"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Himpunan Mahasiswa \n Sistem Informasi"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:id="@+id/hima"
+        android:transitionName="logo_text"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Universitas Dinamika"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:fontFamily="sans-serif-medium"
+        android:id="@+id/undika"
+        />
+
+</LinearLayout>

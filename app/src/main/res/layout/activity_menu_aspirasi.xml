@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MenuAspirasi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:id="@+id/Aspirasiback"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aspirasi"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/il_aspirasi"
+        android:layout_gravity="top"
+        android:layout_marginTop="16dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Aspirasi/Keluhan/Saran"
+        app:hintEnabled="true"
+        app:boxBackgroundColor="@color/white"
+        android:textColorHint="@color/reddy"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:layout_gravity="fill_vertical"
+        app:backgroundTint="#ffff"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:inputType="textMultiLine"
+        android:layout_gravity="top"
+        android:id="@+id/txtAspirasi"
+        />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:hint="Solusi yang diharapkan"
+        app:hintEnabled="true"
+        app:boxBackgroundColor="@color/white"
+        android:textColorHint="@color/reddy"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textAlignment="textStart"
+        app:backgroundTint="#ffff"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:inputType="textMultiLine"
+            android:id="@+id/txtSolusi"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:background="#066132"
+        app:backgroundTint="@null"
+        android:fontFamily="@font/open_sans_bold"
+        android:elevation="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/btnSubmitAspirasi"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"/>
+
+</LinearLayout>
