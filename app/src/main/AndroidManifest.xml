@@ -12,9 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_UAS"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Login"></activity>
-        <activity android:name=".MenuPengurus"></activity>
-        <activity android:name=".MenuAspirasi"></activity>
+        <activity android:name=".LupaPassword"></activity>
+        <activity android:name=".ProfilHmsi" />
+        <activity android:name=".Login" />
+        <activity android:name=".MenuPengurus" />
+        <activity android:name=".MenuAspirasi" />
         <activity android:name=".MenuGaleri" />
         <activity android:name=".MenuEvent" />
         <activity android:name=".registrasi" />

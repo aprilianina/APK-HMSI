@@ -60,8 +60,9 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
+        session ambil = new session(getApplicationContext());
         Intent terima = getIntent();
-        String terimaNama = terima.getStringExtra(Login.ambilnim);
-        txtMenuNama_code.setText("Hi " + terimaNama);
+
+        txtMenuNama_code.setText("Hi " + ambil.getnama());
     }
 }

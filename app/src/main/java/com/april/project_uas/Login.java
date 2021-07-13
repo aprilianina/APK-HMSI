@@ -77,6 +77,7 @@ public class Login extends AppCompatActivity {
                                 String cek= jsonObj.getString("status");
                                 String message = jsonObj.getString("message");
                                 if(cek.equals("true")){
+                                    String nama = jsonObj.getString("data");
                                     session ambil = new session(getApplicationContext());
                                     ambil.setNim(nim);
                                     Intent pindah = new Intent(Login.this, Dashboard.class);
@@ -123,6 +124,15 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent pindah = new Intent(Login.this, registrasi.class);
+                pindah.putExtra(nim, txtNim_code.getText().toString());
+                startActivity(pindah);
+            }
+        });
+
+        txtLupa_code.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent pindah = new Intent(Login.this, LupaPassword.class);
                 pindah.putExtra(nim, txtNim_code.getText().toString());
                 startActivity(pindah);
             }

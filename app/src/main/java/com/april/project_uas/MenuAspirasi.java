@@ -58,7 +58,7 @@ public class MenuAspirasi extends AppCompatActivity {
         Aspirasiback_code.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent pindah = new Intent(MenuAspirasi.this, MainActivity.class);
+                Intent pindah = new Intent(MenuAspirasi.this, Dashboard.class);
                 startActivity(pindah);
             }
         });

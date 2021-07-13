@@ -68,7 +68,7 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/dash_bg"/>
+                        android:src="@drawable/ketum"/>
 
                     <LinearLayout
                         android:layout_marginTop="10dp"
@@ -135,7 +135,7 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/dash_bg"/>
+                    android:src="@drawable/waketum"/>
 
                 <LinearLayout
                     android:layout_marginTop="10dp"
@@ -203,7 +203,7 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/dash_bg"/>
+                    android:src="@drawable/bendahara"/>
 
                 <LinearLayout
                     android:layout_marginTop="10dp"
@@ -271,7 +271,7 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/dash_bg"/>
+                    android:src="@drawable/sekret1"/>
 
                 <LinearLayout
                     android:layout_marginTop="10dp"
@@ -339,7 +339,7 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/dash_bg"/>
+                    android:src="@drawable/sekret2"/>
 
                 <LinearLayout
                     android:layout_marginTop="10dp"

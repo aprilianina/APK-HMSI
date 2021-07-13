@@ -17,4 +17,12 @@ public class session {
         String nim= pref.getString("nim","");
         return nim;
     }
+
+    public void setNama(String nama){
+        pref.edit().putString("nama", nama).commit();
+    }
+    public String getnama() {
+        String nama= pref.getString("nama","");
+        return nama;
+    }
 }
