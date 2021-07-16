@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -30,6 +31,7 @@ public class LupaPassword extends AppCompatActivity {
     private TextInputEditText txtNim_code, txtPassbaru_code, txtPasslama_code;
     private Button btnUbahpwd_code, btnHapusakun;
     private ImageView Lupaback_code;
+    private TextView txtStatus_code;
 
     private String URLUpdate = "http://192.168.100.39/uasMobile/update.php";
     private String URLDelete = "http://192.168.100.39/uasMobile/delete.php";
@@ -51,9 +53,8 @@ public class LupaPassword extends AppCompatActivity {
         btnUbahpwd_code = (Button)findViewById(R.id.btnUbahpwd);
         btnHapusakun = (Button)findViewById(R.id.btnHapusakun);
 
-        nim = txtNim_code.getText().toString().trim();
-        passbaru = txtPassbaru_code.getText().toString().trim();
-        passlama = txtPasslama_code.getText().toString().trim();
+        txtStatus_code = (TextView)findViewById(R.id.txtStatus);
+
 
         Lupaback_code.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,14 +67,16 @@ public class LupaPassword extends AppCompatActivity {
         btnUbahpwd_code.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                nim = txtNim_code.getText().toString().trim();
+                passbaru = txtPassbaru_code.getText().toString().trim();
                 if (nim.equals("") || passbaru.equals("")){
                     Toast.makeText(getApplicationContext(), "Harap semua diisi", Toast.LENGTH_SHORT).show();
                 }else {
 
-                    stringRequest = new StringRequest(Request.Method.POST, URLDelete, new Response.Listener<String>() {
+                    stringRequest = new StringRequest(Request.Method.POST, URLUpdate, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
-
+//                            txtStatus_code.setText(response);
                             Intent pindah = new Intent(LupaPassword.this, Login.class);
                             startActivity(pindah);
                                 Toast.makeText(getApplicationContext(), "Berhasil Ubah", Toast.LENGTH_SHORT).show();
@@ -106,11 +109,14 @@ public class LupaPassword extends AppCompatActivity {
         btnHapusakun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                nim = txtNim_code.getText().toString().trim();
+                passlama = txtPasslama_code.getText().toString().trim();
+
                 if (nim.equals("") || passlama.equals("")){
                     Toast.makeText(getApplicationContext(), "Harap semua diisi", Toast.LENGTH_SHORT).show();
                 }else {
 
-                    stringRequest = new StringRequest(Request.Method.POST, URLUpdate, new Response.Listener<String>() {
+                    stringRequest = new StringRequest(Request.Method.POST, URLDelete, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
 

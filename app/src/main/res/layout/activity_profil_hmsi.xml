@@ -9,6 +9,16 @@
     android:background="@color/white"
     tools:context=".ProfilHmsi">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,12 +28,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_back"
-            android:id="@+id/Aspirasiback"/>
+            android:id="@+id/imgBack"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Aspirasi"
+            android:text="Profil HMSI"
             android:textSize="20dp"
             android:textColor="@color/black"
             android:fontFamily="@font/open_sans_bold"
@@ -35,11 +45,11 @@
 
 
     <ImageView
-        android:layout_width="400px"
-        android:layout_height="400px"
+        android:layout_width="250px"
+        android:layout_height="250px"
         android:src="@drawable/logohmsi"
-        android:layout_gravity="top"
-        android:layout_marginTop="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
         android:id="@+id/logo"
         android:transitionName="logotrans"/>
 
@@ -47,11 +57,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Himpunan Mahasiswa \n Sistem Informasi"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:textSize="20dp"
-        android:fontFamily="sans-serif-medium"
-        android:textStyle="bold"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="@color/black"
         android:id="@+id/hima"
         android:transitionName="logo_text"
         />
@@ -59,12 +69,73 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="VISI"
+        android:textColor="@color/black"
+        android:fontFamily="@font/open_sans_bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menjadikan Himpunan Mahasiswa Sistem Informasi sebagai wadah aspirasi dan menjadi tempat untuk penyalur inovasi-inovasi bagi seluruh mahasiswa Sistem Informasi."
+        android:fontFamily="@font/open_sans_regular"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textAlignment="textStart"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MISI"
+        android:textColor="@color/black"
+        android:fontFamily="@font/open_sans_bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Menghimpun, menyerap dan menindaklanjuti aspirasi mahasiswa sistem informasi.
+\n2. Mewadahi dan memfasilitasi mahasiswa Sistem Informasi untuk berinovasi.
+\n3. Menciptakan lingkungan kerja yang menyenangkan agar terlahirnya generasi-generasi mahasiswa yang aktif.
+\n4. Meningkatkan kerjasama yang baik dengan organisasi di dalam kampus maupun luar kampus."
+        android:fontFamily="@font/open_sans_regular"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textAlignment="textStart"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Universitas Dinamika"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="40dp"
         android:gravity="center"
         android:textSize="15dp"
-        android:fontFamily="sans-serif-medium"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="@color/black"
         android:id="@+id/undika"
         />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kontak Developer"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:background="@color/reddy"
+                app:backgroundTint="@null"
+                android:fontFamily="@font/open_sans_bold"
+                android:elevation="6dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="2dp"
+                android:layout_gravity="center"
+                android:id="@+id/btnDev"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"/>
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>

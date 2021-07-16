@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_UAS"
         android:usesCleartextTraffic="true">
-        <activity android:name=".LupaPassword"></activity>
+        <activity android:name=".Developer"></activity>
+        <activity android:name=".LupaPassword" />
         <activity android:name=".ProfilHmsi" />
         <activity android:name=".Login" />
         <activity android:name=".MenuPengurus" />
@@ -21,12 +22,12 @@
         <activity android:name=".MenuEvent" />
         <activity android:name=".registrasi" />
         <activity android:name=".Dashboard" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".MainActivity"><intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
         </activity>
     </application>
 

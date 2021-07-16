@@ -28,7 +28,7 @@ public class registrasi extends AppCompatActivity {
     public TextInputEditText txtNama_code;
     private TextInputEditText txtPass_code;
     private Button btnMasuk_code;
-    private TextView txtStatus_code;
+    private TextView txtStatus_code, txtLogin_Code;
     static final String ambilnama = "";
 
     //deklar var
@@ -51,7 +51,16 @@ public class registrasi extends AppCompatActivity {
         txtPass_code = (TextInputEditText)findViewById(R.id.txtPass);
         btnMasuk_code = (Button)findViewById(R.id.btndaftar);
 
+        txtLogin_Code = (TextView)findViewById(R.id.txtLogin);
         txtStatus_code = (TextView)findViewById(R.id.txtStatus);
+
+        txtLogin_Code.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent pindah = new Intent(registrasi.this, Login.class);
+                startActivity(pindah);
+            }
+        });
 
         btnMasuk_code.setOnClickListener(new View.OnClickListener() {
             @Override

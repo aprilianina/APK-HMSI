@@ -83,8 +83,10 @@ public class MenuAspirasi extends AppCompatActivity {
                                 jsonObj = new JSONObject(response);
 
                                 String message = jsonObj.getString("message");
-                                Toast.makeText(getApplicationContext(),message , Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(),"Terimakasih sudah beraspirasi", Toast.LENGTH_SHORT).show();
 
+                                txtAspirasi_code.setText("");
+                                txtSolusi_code.setText("");
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/white"
+    tools:context=".Developer">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back"
+                    android:id="@+id/imgBack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Developer"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="16dp"/>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="500px"
+                android:layout_height="400px"
+                android:src="@drawable/developer"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:id="@+id/logo"
+                android:transitionName="logotrans"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apriliani Nur Afifah"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/black"
+                android:id="@+id/hima"
+                android:transitionName="logo_text"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello, my name is April.
+\n I'm an undergraduate at Faculty Technology and Information Dinamika University I specialize in Information Systems.
+\nNow I serve as CEO at Association Students of Information Systems.
+\n I'm a talkative person and friendly at the same time. I'm willing to learn something new"
+                android:fontFamily="@font/open_sans_regular"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textAlignment="textStart"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kunjungi juga"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textSize="14dp"
+                android:layout_marginTop="30dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:src="@drawable/instagram"
+                    android:id="@+id/imgInsta"/>
+
+                <ImageView
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/linkedidn"
+                    android:id="@+id/imgLink"/>
+
+                <ImageView
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/github"
+                    android:id="@+id/imgGit"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
