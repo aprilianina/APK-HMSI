@@ -83,7 +83,8 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-                moveTaskToBack(true);
+                session logout = new session(getApplicationContext());
+                logout.setNama("");
                 Toast.makeText(getApplicationContext(), "eror", Toast.LENGTH_SHORT).show();
 
             }

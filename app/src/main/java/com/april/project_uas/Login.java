@@ -79,6 +79,7 @@ public class Login extends AppCompatActivity {
                                 if(cek.equals("true")){
                                     String nama = jsonObj.getString("data");
                                     session ambil = new session(getApplicationContext());
+                                    ambil.setNama(nama);
                                     ambil.setNim(nim);
                                     Intent pindah = new Intent(Login.this, Dashboard.class);
                                     pindah.putExtra(ambilnim, txtNim_code.getText().toString());
